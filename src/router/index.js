@@ -22,6 +22,14 @@ export default new Router({
       mate: {
         keepAlive: true
       }
+    },
+    {
+      path: '/score',
+      name: 'score',
+      component: resolve => { require(['@/views/score'], resolve) }, // 懒加载路由
+      mate: {
+        keepAlive: true
+      }
     }
   ]
 })
